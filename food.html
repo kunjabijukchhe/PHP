@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+        .personal{
+            text-align: center;
+        }
+            
+            
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        }
+        input{
+            margin-top: 10px;
+           margin-bottom: 20px;
+        }
+        
+      </style>
+  </head>
+  <body>
+
+    <div class="personal">
+        <h3>Fast Food online order form</h3>
+        <fieldset style="border:0px; border-top:1px solid black">
+            <legend>Fill the form below</legend>
+        </fieldset>
+
+    <h1>STEP1:Delivery Information</h1>
+    <form name="register" method="post" action="foodTruck.php">
+        <label for="name">Customer's Name: </label>
+        <input type = "text" name = "name"> <br> 
+        
+        <label for="phone">Phone Number: </label>
+        <input type = "text" name = "phone"> - <input type = "text" name = "phone"><br>
+
+        <label for="address">Delivery Address: </label>
+        <textarea name = "address" rows = "10" cols = "40"></textarea>
+    <h1>STEP2:Your Menu Choice</h1>
+    <table border="1" class="center">
+        <tr>
+            
+            <th><b>Menu</b></th>
+            <th><b>Price</b></th>
+            <th><b>  Quantity  </b></th>
+          </tr>
+          <tr>
+            <td>Chicken Teriyaki</td>
+            <td>Rs. 11.55</td>
+            <td>    <input type="number" name="chicken">   </td>
+           
+          </tr>
+          <tr>
+            <td>Italian BMT</td>
+            <td>Rs. 13.254</td>
+            <td>    <input type="number" name="italian"> </td>
+          </tr>
+
+          <tr>
+            <td>Veggie Delight</td>
+            <td>Rs. 9.90</td>
+            <td> <input type="number" name="veggie"></td>
+          </tr>
+    </table>
+    
+    <input class="space" type="submit"  value = "confirm order">
+    <input type="reset" name = "cancel" value = "cancel order">
+    </form>
+    </div>
+
+  </body>
+</html>
